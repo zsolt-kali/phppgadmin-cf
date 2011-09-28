@@ -10,7 +10,10 @@ Released: TBA
 Some bug fixes.
 
 * Fix bug with enable/disable triggers on multiple triggers (Dawid 'DeyV' Polak)
-* Two security fix about code injection, reported by Mateusz Goik, fixed by ioguix.
+* Fix bug #3353670: Error when executing a report with paging
+* Fix bug with OpenBSD about where setting application_name using PGOPTIONS was raising an ERROR
+* Two security fix about code injection, reported by Mateusz Goik, fixed by ioguix
+* Fix character-encoding problem with autocomplete
 
 Version 5.0.2
 -------------
