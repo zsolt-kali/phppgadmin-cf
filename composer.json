@@ -1,13 +1,20 @@
 {
-    "name": "phppgadmin/phppgadmin",
-    "description": "phpPgAdmin is a web-based administration tool for PostgreSQL. It is perfect for PostgreSQL DBAs, newbies, and hosting services.",
-    "type": "Application",
-    "license": "GPL-2.0+",
-    "require": {
-        "php": ">=5.0"
-    },
-    "minimum-stability": "stable",
-    "autoload": {
-    }
+  "name": "phppgadmin/phppgadmin",
+  "description": "phpPgAdmin is a web-based administration tool for PostgreSQL. It is perfect for PostgreSQL DBAs, newbies, and hosting services.",
+  "type": "Application",
+  "license": "GPL-2.0+",
+  "require": {
+    "php": "5.5.*",
+    "ext-mbstring": "*",
+    "ext-pgsql": "*",
+    "ext-mcrypt": "*",
+    "ext-pdo": "*",
+    "ext-pdo_pgsql": "*",
+    "cloudfoundry-community/cf-helper-php": "1.4.*",
+    "monolog/monolog": "~1.13"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+  }
 }
 
