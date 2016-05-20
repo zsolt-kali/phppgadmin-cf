@@ -33,3 +33,9 @@ cf restart ${appname}
 ```
 
 Yeah, `cf curl`, `jq` and `xargs` are pretty fantastic when combined together.
+
+To dump all the credentials for all the bound databases, try:
+
+```
+cf curl /v2/apps\?q=name:${appname} | jq -r ".resources[0].entity.service_bindings_url" | xargs -L1 cf curl | jq -r ".resources[].entity.credentials"
+```
