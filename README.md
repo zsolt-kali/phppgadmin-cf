@@ -44,7 +44,7 @@ cf curl /v2/apps\?q=name:${appname} | jq -r ".resources[0].entity.service_bindin
 
 ## FAQ
 
-I'm getting the following error message, although the submitted credentials are correct 
->> Attempt to connect with invalid server parameter, possibly someone is trying to hack your system."
+I'm getting the following error message, although the submitted credentials are correct: 
+> Attempt to connect with invalid server parameter, possibly someone is trying to hack your system
 
 Try closing your HTTP session (clear your cookies or use a private browsing window) to flush your PHP session. It might be your previous attempts to log in are interferring.
