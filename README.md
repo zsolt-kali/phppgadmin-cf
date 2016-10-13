@@ -41,3 +41,10 @@ To dump all the credentials for all the bound databases, try:
 ```
 cf curl /v2/apps\?q=name:${appname} | jq -r ".resources[0].entity.service_bindings_url" | xargs -L1 cf curl | jq -r ".resources[].entity.credentials"
 ```
+
+## FAQ
+
+I'm getting the following error message, although the submitted credentials are correct 
+>> Attempt to connect with invalid server parameter, possibly someone is trying to hack your system."
+
+Try closing your HTTP session (clear your cookies or use a private browsing window) to flush your PHP session. It might be your previous attempts to log in are interferring.
